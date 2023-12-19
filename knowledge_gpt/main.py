@@ -21,13 +21,13 @@ from knowledge_gpt.core.utils import get_llm
 
 EMBEDDING = "openai"
 VECTOR_STORE = "faiss"
-MODEL_LIST = ["gpt-3.5-turbo", "gpt-4"]
+MODEL_LIST = ["gpt-4","gpt-3.5-turbo"]
 
 # Uncomment to enable debug mode
 # MODEL_LIST.insert(0, "debug")
 
-st.set_page_config(page_title="KnowledgeGPT", page_icon="📖", layout="wide")
-st.header("📖KnowledgeGPT")
+st.set_page_config(page_title="Knowledge Base Bot", page_icon="", layout="wide")
+st.header("Knowledge Base Bot")
 
 # Enable caching for expensive functions
 bootstrap_caching()
